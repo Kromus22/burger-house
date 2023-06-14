@@ -1,0 +1,40 @@
+.header {
+  padding: 40px 0;
+  margin-bottom: 102px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  vertical-align: bottom;
+}
+
+.header__menu {
+  margin-left: 191px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 88px;
+}
+
+.menu__list a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.currency {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 6px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  line-height: 32px;
+  margin-left: auto;
+  user-select: none;
+}

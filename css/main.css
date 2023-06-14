@@ -1,0 +1,39 @@
+.main-content {
+  margin-bottom: 200px;
+}
+
+.main-content .container {
+  position: relative;
+}
+
+.main__info {
+  max-width: 608px;
+}
+
+.main__small-info {
+  background-color: #D3320F;
+  border-radius: 100px;
+  padding: 12px 16px;
+  display: inline-block;
+}
+
+.main__title {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 120px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+.main__text {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 56px;
+}
+
+.main__img {
+  position: absolute;
+  top: -123px;
+  left: calc(100% - 991px);
+}
