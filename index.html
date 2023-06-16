@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/scripts.js" type="module"></script>
   <title>Burger House</title>
 </head>
 
@@ -21,18 +22,18 @@
         <nav class="header__menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#">Почему у нас</a>
+              <a data-link="why">Почему у нас</a>
             </li>
             <li class="menu__item">
-              <a href="#">Меню бургеров</a>
+              <a data-link="products">Меню бургеров</a>
             </li>
             <li class="menu__item">
-              <a href="#">Оформление заказа</a>
+              <a data-link="order">Оформление заказа</a>
             </li>
           </ul>
         </nav>
 
-        <div class="currency" title="Изменить валюту">$</div>
+        <div class="currency" title="Изменить валюту" id="change-currency">$</div>
       </div>
     </header>
 
@@ -49,7 +50,7 @@
               вкусом наших бургеров. Готовим для
               вас лучшие бургеры в городе из отборной мраморной говядины.</p>
 
-            <button class="main__btn button">Смотреть меню</button>
+            <button class="main__btn button" id="main-action-btn">Смотреть меню</button>
 
           </div>
 
@@ -57,7 +58,7 @@
         </div>
       </section>
 
-      <section class="why">
+      <section class="why" id="why">
         <div class="container">
           <h2 class="common__title why__title">почему нас выбирают?</h2>
 
@@ -90,7 +91,7 @@
         </div>
       </section>
 
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <h2 class="common__title products__title">выберите свой бургер</h2>
 
@@ -107,7 +108,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">8 $</p>
+                  <p class="products__item-price" data-base-price="8">8 $</p>
                   <p class="products__item-weigth">360 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -134,7 +135,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">7 $</p>
+                  <p class="products__item-price" data-base-price="7">7 $</p>
                   <p class="products__item-weigth">390 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -160,7 +161,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">10 $</p>
+                  <p class="products__item-price" data-base-price="10">10 $</p>
                   <p class="products__item-weigth">420 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -186,7 +187,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">7 $</p>
+                  <p class="products__item-price" data-base-price="7">7 $</p>
                   <p class="products__item-weigth">220 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -212,7 +213,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">8 $</p>
+                  <p class="products__item-price" data-base-price="8">8 $</p>
                   <p class="products__item-weigth">220 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -239,7 +240,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">9 $</p>
+                  <p class="products__item-price" data-base-price="9">9 $</p>
                   <p class="products__item-weigth">320 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -265,7 +266,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">8 $</p>
+                  <p class="products__item-price" data-base-price="8">8 $</p>
                   <p class="products__item-weigth">280 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -292,7 +293,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">7 $</p>
+                  <p class="products__item-price" data-base-price="7">7 $</p>
                   <p class="products__item-weigth">380 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -319,7 +320,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">11 $</p>
+                  <p class="products__item-price" data-base-price="11">11 $</p>
                   <p class="products__item-weigth">400 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -346,7 +347,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">9 $</p>
+                  <p class="products__item-price" data-base-price="9">9 $</p>
                   <p class="products__item-weigth">300 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -373,7 +374,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">8 $</p>
+                  <p class="products__item-price" data-base-price="8">8 $</p>
                   <p class="products__item-weigth">320 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -400,7 +401,7 @@
 
               <div class="products__item-extra">
                 <div class="products__item-info">
-                  <p class="products__item-price">9 $</p>
+                  <p class="products__item-price" data-base-price="9">9 $</p>
                   <p class="products__item-weigth">360 гр</p>
                 </div>
                 <button class="button product__btn">
@@ -418,7 +419,7 @@
         </div>
       </section>
 
-      <section class="order">
+      <section class="order" id="order">
         <div class="container">
           <h2 class="common__title order__title">оформление заказа</h2>
           <img class="order__img" src="img/order_image.png" alt="картинка коробочки с бургером">
@@ -428,16 +429,16 @@
 
             <div class="order__form-inputs">
               <div class="order__form-input">
-                <input type="text" placeholder="Ваш заказ">
+                <input type="text" placeholder="Ваш заказ" id="burger">
               </div>
               <div class="order__form-input">
-                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваше имя" id="name">
               </div>
               <div class="order__form-input">
-                <input type="text" placeholder="Ваш телефон">
+                <input type="text" placeholder="Ваш телефон" id="phone">
               </div>
 
-              <button class="button">Оформить заказ</button>
+              <button class="button" id="order-action">Оформить заказ</button>
             </div>
           </div>
         </div>
